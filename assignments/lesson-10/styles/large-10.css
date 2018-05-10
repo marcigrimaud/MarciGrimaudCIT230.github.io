@@ -1,0 +1,114 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+/*NAVIGATION*/    
+    .topnav{
+            display:flex;
+            position:relative;
+            margin-left: 200px;
+            margin-top: -100px;
+            padding-bottom: 15px;
+            }
+    
+    li a{ font-size: 20px;}
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+    nav ul {display: flex;}
+  
+/*MAIN BODY OF THE PAGE */   
+    .bannerimage { height: 600px;}
+/* show the 10-day forecast with the medium view and up */
+  section.forecast {
+      display: table;
+      width: 100%;
+      
+    }  
+    
+/*HOMEPAGE DESIGN*/
+    
+    #citiesbox strong{ 
+    font-size: 1em; }
+    
+/* City Containers*/    
+    .franklincity{
+        margin: 21px auto auto auto;
+        padding-bottom: 40px;}
+    .greenvillecity{
+        margin: 20px auto auto auto;
+        padding-bottom: 40px;}
+    .spingfieldcity{
+        margin: 20px auto auto auto;
+        padding-bottom: 40px;}
+    
+/* Current Weather*/
+    #weathersum strong {
+        font-size: 1em; 
+        color: #4DBCE9; 
+    }
+    #weathersum p {
+        font-family: acumin-pro, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2em; 
+    }
+    
+    
+    .current{padding-bottom: 40px;}
+    
+    .highlow {
+       margin: 20px auto auto auto;
+        padding-bottom: 40px;
+}
+    .conditions {
+        margin: 20px auto auto auto;
+        padding-bottom: 40px;}
+  
+    
+/*ARTICLES AND STORIES*/  
+        article {
+            max-width: 50%; 
+            margin-left: auto; 
+            margin-right: auto;
+            
+            display: flex;
+            justify-content:center;
+}
+    
+    .artitem1 {
+        width: 50%;
+    }
+    
+  article p.town-article img { 
+        width: 50%;
+        min-width:50%;
+ }
+    
+    
+/*GALLERY*/
+    .gridgallery {
+        margin-left: 5%;
+        width: 90%;
+        padding: 30px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 1em;
+        }
+    
+    .gridgallery figure:hover {box-shadow: 5px 5px 10px gray;}
+ 
+    
+/*STORM CENTER*/
+    /*FORM*/
+        form#stormcform {
+            max-width: 40%;}
+    textarea {
+        /* calc and viewport to the rescue */
+        width:  calc(35vw - 20px);
+        height:  calc(20vw - 20px); 
+        resize:both;
+        }
+
+    
+}/*don't delete on accident */

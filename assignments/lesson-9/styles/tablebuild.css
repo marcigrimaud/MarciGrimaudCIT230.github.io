@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+table {
+    width: 300px;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 8px 8px 20px #628ca6;
+}
+
+ thead, th, td, tfoot {
+    border: 1px solid #bebfbe;
+    text-align: center;
+    padding: 6px 8px;
+}
+
+thead td, tfoot td {
+  background-color: #7fb9c2;
+}
+
+thead td{
+    color: black;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+tfoot td{
+    font-size: 12px;
+}
+
+th{
+    font-size: 18px;
+    background-color: #628ca6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color:#e7f0ed;
+} 
+
+tr:nth-child(odd) {
+    background-color:#e7ffed;
+}
+
+td,th {
+    white-space: nowrap;
+}
+
+.highgoal {
+    color: white;
+    background-color: #628ca6;
+    
+}
+
+tr td i{
+    font-style: italic;
+    font-weight: 400;
+    
+}
+
+
+
+
+

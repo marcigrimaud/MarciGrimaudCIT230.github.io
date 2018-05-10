@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
+      
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body>
+
+      <header>
+      </header>
+
+      <section>
+      </section>
+
+      
+    <script>
+    //grab references to the header and section
+        var header = document.querySelector('header');
+        var section = document.querySelector('section');
+        
+    //how to get the JSON, XHR
+        var requestURL = "https://byui-cit230.github.io/towndata.json";
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        
+        //so that the XHR knows that it will return JSON
+        request.responseType = 'json';
+        request.send();
+        
+        //waiting for the response to show
+        request.onload = function() {
+            var towndata = request.response; // store the JSON data
+            var towns = towndata['towns'];
+            }
+        
+    //shows the superhero cards,  similar to above 
+        function showHeroestest(jsonObj) {
+            var towndata = jsonObj['towns'];
+      
+      for (var i = 0; i < heroes.length; i++) {
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myH4 = document.createElement('h4');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myList = document.createElement('li');
+
+           yourVar.textContent, and document.getElementById('events').appendChild(yourVar)
+          
+          
+        myH2.textContent = towns[i].name;
+        myH4.textContent = towns[i].motto;
+        myPara1.textContent = 'Founded: ' + towns[i].yearFounded;
+        myPara2.textContent = 'Population: ' + towns[i].currentPopulation;
+        myPara3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+        myList.textContent = 'Events: ' + towns[i].averageRainfall;
+                    
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myList);
+
+    section.appendChild(myArticle);
+  }
+}
+        
+        
+    </script>
+  </body>
+</html>

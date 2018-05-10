@@ -1,0 +1,67 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+    nav {
+            display:block;
+            position:relative;
+            margin-left: 200px;
+            margin-top: -70px;
+            padding-bottom: 10px;
+            }
+    
+    nav a{ font-size: 15px;}
+    
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+    nav ul {display: inline;}
+    
+/*Current Weather*/
+    
+    p .weather {
+        font-family: acumin-pro, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1em;}
+   #weathersum strong {
+        font-size: 1em; 
+        color: #4DBCE9; }
+    
+    #weathersum p {
+        font-family: acumin-pro, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2em; 
+    }
+       .current{
+        margin: auto;    
+        width: 33%;
+	   float: left;
+	   padding-bottom:  40px;}
+
+    .highlow {
+        width: 33%;
+	   float: left;
+	   padding: 5px 40px 5px;
+	   margin: 1px auto auto auto;
+}
+    
+    
+    .conditions {
+        width: 33%;
+        min-width: 33%;
+	   float: left;
+	   padding: 5px;
+	   margin: 1px auto auto auto;}
+    
+    
+    
+    
+    
+    
+    
+  section.forecast { display: inline; }  /* show the 10-day forecast with the medium view and up */
+    
+  article {max-width: 50%; margin-left: auto; margin-right: auto;}
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+   
+}
